@@ -7,7 +7,7 @@
 
 
 ## Install
-``` npm install git://github.com/Lissy93/place-lookup.git --save```
+``` npm install place-lookup --save```
 
 ## Usage
 ```javascript
