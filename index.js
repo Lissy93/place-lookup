@@ -1,5 +1,5 @@
 (function() {
-  var formatResults, host, main, makeRequest, makeURL, querystring, request;
+  var formatResults, host, main, makeRequest, makeURL, querystring, removeStingChars, request;
 
   request = require('request');
 
@@ -7,9 +7,13 @@
 
   host = "https://maps.googleapis.com/maps/api/place/textsearch/json";
 
+  removeStingChars = function(str) {
+    return str.replace(/[^A-Za-z0-9\s,]/g, '');
+  };
+
   makeURL = function(paramaters, apiKey) {
     var urlParams;
-    urlParams = typeof paramaters === 'string' ? 'query=' + paramaters : typeof paramaters === 'object' ? querystring.stringify(paramaters) : void 0;
+    urlParams = typeof paramaters === 'string' ? 'query=' + removeStingChars(paramaters) : typeof paramaters === 'object' ? querystring.stringify(paramaters) : void 0;
     return host + '?' + 'key=' + apiKey + '&' + urlParams;
   };
 
