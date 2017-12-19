@@ -1,6 +1,6 @@
 {
   "name": "place-lookup",
-  "version": "0.0.2",
+  "version": "1.0.1",
   "description": "A lightweight Node.js module to get the latitude and longitude for any fuzzy place name using the Google Places API",
   "main": "index.js",
   "scripts": {
