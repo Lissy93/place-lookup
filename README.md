@@ -1,4 +1,6 @@
 # place-lookup
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Lissy93/place-lookup.svg)](https://greenkeeper.io/)
 > A lightweight Node.js module to get the latitude and longitude for any fuzzy place name using the Google Places API
 
 [![Dependency Status](https://david-dm.org/lissy93/place-lookup.svg)](https://david-dm.org/lissy93/place-lookup)
